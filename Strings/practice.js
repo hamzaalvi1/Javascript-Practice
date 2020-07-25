@@ -27,8 +27,9 @@ let cloneIndexof = (str,indexWord)=>{
    
  })
  const mergeIndex = filterStr.flat()
- const indexArr =  mergeIndex.length !== 0 ? mergeIndex.toString() : "-1" 
-  let  finalIndex = indexArr.slice(0,1)
-  return finalIndex 
+ const indexArr =  mergeIndex.length !== 0 ? mergeIndex.toString().slice(0,1) : "-1" 
+  
+  return indexArr 
 } 
-console.log(cloneIndexof("Hamza","H"))
+console.log(cloneIndexof("Hamza","z"))
+console.log(cloneIndexof("shafaq","q"))
