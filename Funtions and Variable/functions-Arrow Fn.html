@@ -41,17 +41,91 @@
 // greetName(_username,_userAge)
 
 // Arrow Funtions
-function name(){
-    console.log("hello normal function")
+// function name(){
+//     console.log("hello normal function")
+// }
+// const _Name = () => console.log("Arrow Fn") 
+// name()
+// _Name()
+
+
+
+// multi line fn
+// const getData = ()=>{
+// if(true){
+//     console.log("hello world")
+// }
+// }
+// getData()
+
+
+// using single parameter round brackets are remove
+// const allData = data => {
+// alert(data)
+// }
+// allData("Salman")
+
+// multiple arg round brackets are used
+// const dbleArg = (name,age) => {
+//     console.log(`Hey there my name is ${name} and age is ${age}`)
+// }
+
+// dbleArg("Hamza Alvi",23)
+
+/// Example 2
+
+// const dbleArg2 = () => {
+//     let name = prompt("Enter Your Name");
+//     let age = prompt("age")
+    
+//     const data = `Hey there my name is ${name} and age is ${age}`
+//     return data 
+// }
+
+// const getData  = dbleArg2()
+// console.log(getData)
+// // const dummy = ()=> (console.log("hello"))
+
+
+/// Objects
+
+// Primitive Type = String , Number , Boolean , Symbols
+// let num1 = 1;
+// let num2 = num1
+// console.log(num1)
+// console.log(num2 + 2)
+
+
+
+// //Non Primitive Type = Arrays ,Objects
+
+// let arr1  = ["Salman","Umair","Hamza"]
+// let arr2 = [...arr1]
+// arr2.push("Rafay")
+// //arr1.push("Danish")
+
+// console.log("Array 1",arr1)
+// console.log("Array 2",arr2)
+
+let user1 = {
+ name: "Umair",
+ age:24,
+ hairColor : "black",
+
+isJob(){
+return "Salman Bhai"
+},
+
+isEating(){
+// alert (`${this.name} is Eating`)
+  console.log("Inside Object",this)
+},
 }
-
-const _Name = () => console.log("Arrow Fn") 
-
-
-
-name()
-_Name()
-
+// console.log(user1.hairColor)
+// let isJob =  user1.isJob()
+// console.log(isJob)
+user1.isEating()
+console.log("Outside Object",this)
 
 </script>
 </html>
